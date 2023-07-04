@@ -31,7 +31,7 @@ class SplashScreen:ComponentActivity() {
         setContent {
           splashView()
         }
-        delay(5000){
+        delay(2000){
           navigateMain()
         }
     }

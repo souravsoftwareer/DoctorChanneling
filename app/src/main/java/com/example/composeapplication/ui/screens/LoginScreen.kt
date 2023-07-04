@@ -44,7 +44,7 @@ fun LoginScreen(
                 fontFamily = FontName,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(
-                    vertical = 10.dp,
+                    top = 30.dp,
 
                     )
             )
@@ -61,21 +61,27 @@ fun LoginScreen(
             fontSize = 20.sp,
             fontWeight = FontWeight.Normal,
             fontFamily = FontName,
-            modifier = Modifier.padding(vertical = 10.dp)
+            modifier = Modifier.padding(top = 25.dp)
         )
-        Text(
-            "Email",
-            fontSize = 22.sp,
-            fontWeight = FontWeight.Normal,
-            fontFamily = FontName,
-            modifier = Modifier.padding(vertical = 5.dp)
-        )
-        CustomTextField(
 
+        CustomTextField(
+            label = "Email",
             onValueChange = {
 
             },
-           placeholderText="Enter your email"
+           placeholderText="Enter your email",
+           modifier = Modifier.padding(top = 10.dp)
+               .fillMaxWidth()
+        )
+
+        CustomTextField(
+            label = "Password",
+            onValueChange = {
+
+            },
+           placeholderText="Enter your email",
+           modifier = Modifier.padding(top = 10.dp)
+               .fillMaxWidth()
         )
 
 //        DefaultButton(
